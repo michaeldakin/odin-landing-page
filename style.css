@@ -116,7 +116,11 @@ ul {
 }
 
 .hero a {
-  font-size: 18px;
+
+  color: white;
+}
+.hero a:hover {
+  color: pink;
 }
 
 .info {
@@ -199,6 +203,11 @@ ul {
 .cta-btn {
   border: 2px solid white;
   color: white;
+}
+
+.cta-btn:hover {
+  border: 2px solid pink;
+  color: pink;
 }
 
 .footer {
