@@ -1,5 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  font-family:  "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   min-height: 100vh;
@@ -9,6 +9,7 @@ body {
   background: #3882f6;
   padding: 8px 32px;
   border-radius: 8px;
+  width: 64px;
 }
 
 a {
@@ -31,23 +32,28 @@ a {
 .header {
   height: 72px;
   background-color: #1f2937;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 16px;
-  flex: 1;
 }
+
 .header a {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
   color: #f9faf8;
+}
+.logo {
+  padding-left: 1rem;
+}
+.logo a {
+  font-size: 24px;
 }
 
 .nav {
   justify-content: space-between;
   flex-direction: row;
   display: flex;
+  padding: 0 1rem;
 }
 
 .left-link {
@@ -81,14 +87,23 @@ ul {
   background-color: #1f2937;
   color: #f9faf8;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 16rem;
+  flex-basis: auto;
+  padding: 4rem 8rem;
 }
 
 .hero .logo {
   font-size: 24px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  display: flex;
+  height: 300px;
+  width: 500px;
 }
 
 .hero h1 {
@@ -143,21 +158,40 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8rem;
+  flex-direction: column;
+  padding: 6rem;
 }
 .quote-text {
   font-size: 36px;
   font-style: italic;
   font-weight: 300;
   color: #1f2937;
+  width: 80%;
+}
+
+.quote-author {
+  font-weight: bold;
+  display: flex;
+  align-self: flex-end;
 }
 
 .cta {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
-  background: #fff;
-  padding: 8rem;
+  height: 150px;
+  background: #3882F6;
+  border-radius: 8px;
+  margin: 4rem 8rem;
+}
+
+.cta-text {
+  color: white;
+}
+
+.cta-btn {
+  border: 2px solid white;
+  color: white;
 }
 
 .footer {
